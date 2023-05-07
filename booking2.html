@@ -38,9 +38,9 @@
 								<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></a></li>
+								<li><a href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 							</ul>
-							
+
 							<form class="navbar-form navbar-right">
 							  <div class="input-group">
 							    <input type="text" class="form-control" placeholder="Search">
@@ -53,11 +53,45 @@
 							</form>
 						</div>	
 					</div>
+
+					
+				
+
+			
 				</nav>
+
+				  <!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog" style="padding: 10rem">
+			    <div class="modal-dialog">
+			    
+				      <!-- Modal content-->
+				    <div class="modal-content trans-input-area">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title" style="text-align:center;">Log In</h4>
+				        </div>
+
+				        <div class="modal-body form-group trans-input-area">
+				        	<label><b>Email</b></label>
+				      		<input type="text" class="form-control" placeholder="example@email.com" name="uname" required>
+				      		<br>
+				      		<label><b>Password</b></label>
+				      		<input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+				        	<br>
+				      		<button class="btn btn-block form-control" type="submit" style="background-color: grey; color: white"><a href="home.html"><b>Login</b></a></button>
+				        </div>
+
+				        <div class="modal-footer">
+				         	 <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color: grey;"><b>Cancel</b></button>
+				        </div>
+				    </div>
+			      
+			    </div>
+			</div>
 				
 				
 
-				<div class="background-wrapper" style="background-image: url(images/airline/9.jpg);">
+				<div class="background-wrapper" style="background-image: url(images/img1.jpg);  ">
 				
 				<!--header-->
 
@@ -69,7 +103,7 @@
 
 
 					<!--panel-->
-					<div class="col-sm-8 col-sm-offset-2">
+					<div class="col-sm-8 col-sm-offset-2"  style="margin-top: 100px;">
 						<div class="panel-group">
 						  	<div class="panel panel-default panel-transparent">
 						    	<div class="panel-heading">
@@ -175,20 +209,7 @@
 			</div>
 
 
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="container-fluid">
-					<ul class="icons">
-						<li><a href="#" class="fa fa-twitter" style="color: grey"></a></li>
-						<li><a href="#" class="fa fa-facebook" style="color: grey"></a></li>
-						<li><a href="#" class="fa fa-instagram" style="color: grey"></a></li>
-						<li><a href="#" class="fa fa-envelope" style="color: grey"></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Airline-X. All rights reserved.
-				</div>
-			</footer>
+			
 
 	</body>
 </html>
